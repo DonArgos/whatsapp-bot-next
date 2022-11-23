@@ -1,23 +1,29 @@
 {
-  "name": "whatsaap-bot-next",
+  "name": "whatsapp-bot-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "db": "npx prisma db push"
   },
   "dependencies": {
+    "@next-auth/prisma-adapter": "^1.0.4",
+    "@prisma/client": "^4.5.0",
     "@tanstack/react-query": "^4.10.0",
     "@trpc/client": "10.0.0-rc.4",
     "@trpc/next": "10.0.0-rc.4",
     "@trpc/react-query": "10.0.0-rc.4",
     "@trpc/server": "10.0.0-rc.4",
     "next": "13.0.2",
+    "next-auth": "^4.15.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.9.1",
+    "whatsapp-web.js": "^1.18.3",
     "zod": "^3.18.0"
   },
   "devDependencies": {
@@ -32,10 +38,11 @@
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "prisma": "^4.5.0",
     "tailwindcss": "^3.2.0",
     "typescript": "^4.8.4"
   },
   "ct3aMetadata": {
-    "initVersion": "6.8.0"
+    "initVersion": "6.10.1"
   }
 }

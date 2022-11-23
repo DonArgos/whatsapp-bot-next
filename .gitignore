@@ -15,6 +15,7 @@
 # next.js
 /.next/
 /out/
+next-env.d.ts
 
 # production
 /build
@@ -38,3 +39,5 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+.vscode
+.wwebjs_auth
